@@ -32,7 +32,7 @@ img {
     justify-content: space-between;
 }
 
-.wrapper {
+.wrapper {/*--------------------分からなかった------------------------*/
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 4%;
@@ -41,12 +41,12 @@ img {
     display: flex;
     list-style: none;
     text-transform: uppercase;
-    margin-top: 34px;
+    margin-top: 34px;/*---------pxが違った----------------------*/
     font-size: 1.25rem;
 }
 
 .main-nav li {
-    margin-left: 36px;
+    margin-left: 36px;/*-------pxが違った-----------------------*/
 }
 
 .main-nav a {
@@ -69,12 +69,12 @@ img {
 }
 .home-content {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 10%;/*----------分からなかった--------*/
 }
 
 .home-content p {
     font-size: 1.125rem;
-    margin: 10px 0 42px;
+    margin: 10px 0 42px;/*----------分からなかった--------*/
 }
 
 /*-----見出し--------*/
@@ -92,7 +92,7 @@ img {
     background: #0bd;
     color: #fff;
     border-radius: 5px;
-    padding: 18px 32px;
+    padding: 18px 32px;/*---------px若干違う------*/  
 }
 .button:hover {
     background: #0090aa;
@@ -107,12 +107,126 @@ iframe {
     background-position: center top;
 }
 
+/*---------------------------------------newsページ---------------------------------------*/
+
+/*-----header部分--------*/
+
+#news {
+    background-image: url(../images/news-bg.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+
+#news .page-title {
+    text-align: center;
+}
+
+/*------footer部分------*/
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px;/*---------どこからどこの範囲？-----*/
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/*-----メインコンテンツ部分--------*/
+article {
+    width: 74%;
+}
+
+aside {
+    width: 22%;
+}
+
+.news-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.post-info {
+    position:  relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+/*-----日付の丸いやつ-----*/
+.post-date {
+    background: #0bd;
+    border-radius: 50%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+
+.post-date span {
+    font-size: 1rem;
+    border-top: 1px rgba(255, 255, 255, .5) solid;
+    padding-top: 6px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+/*----newsコンテンツのタイトル----*/
+.post-title {
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.post-title, .post-cat {
+    margin-left: 120px;
+}
+
+/*----newsコンテンツの記事と画像----*/
+/*---本記事の内容-----*/
+article img {
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+/*----サイドバーの内容----*/
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+
+.sub-menu {
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+
+.sub-menu a {
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+
+.sub-menu a:hover {
+    color: #0bd;
+}
 
 
-
-
-
-
+aside p {
+    padding: 12px 10px;
+    text-align: justify;
+}
 
 
 

@@ -317,16 +317,16 @@ input[type="submit"] {
 }
 
 .location-info p {
-    padding: 12px 10px;
+    padding: 12px 10px;/*-----line-heightじゃなかった-----*/
 }
 
 .location-map {
-    width: 74%;
+    width: 74%;/*-----実寸値728px-----*/
 }
 
 #sns {
     background: #FAF7F0;
-    padding: 4% 0;
+    padding: 4% 0;/*-----実寸値52px----*/
 }
 #sns .wrapper {
     display: flex;
@@ -336,7 +336,7 @@ input[type="submit"] {
     margin-bottom: 30px;
 }
 .sns-box {
-    width: 30%;
+    width: 30%;/*-----これを入れないと若干変わってしまう---*/
 }
 
 @media (max-width: 600px) {
@@ -369,16 +369,6 @@ input[type="submit"] {
     #news .page-title {
         margin-top: 30px;
     }
-    article,
-    aside {
-        width: 100%;
-    }
-    aside {
-        margin-top: 60px;
-    }
-    article p {
-        text-align: justify;/*----新しく足した---*/
-    }
     .post-info {
         margin-bottom: 30px;
     }
@@ -402,6 +392,18 @@ input[type="submit"] {
     .post-cat {
         margin-left: 80px;
     }
+    
+    article,
+    aside {
+        width: 100%;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    article p {
+        text-align: justify;/*----新しく足した---*/
+    }
+    
 
     /* MENU */
     .menu-content {

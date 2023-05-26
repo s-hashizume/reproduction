@@ -102,9 +102,7 @@ iframe {
     width: 100%;
 }
 
-#twitter-widget-0 {
-    width: 100% !important;
-}
+
 .big-bg {
     background-size: cover;
     background-position: center top;
@@ -340,6 +338,10 @@ input[type="submit"] {
 }
 .sns-box {
     width: 30%;/*-----これを入れないと若干変わってしまう---*/
+}
+
+.twitter iframe {
+    width: 100% !important;
 }
 
 @media (max-width: 600px) {
